@@ -22,7 +22,7 @@ export function ProductDetail({ product, relatedProducts }: ProductDetailProps) 
     <>
       <main className="page">
         <div className="breadcrumb">
-          <Link href="/products">Products</Link> / <span>{product.name}</span>
+          <Link href="/products/">Products</Link> / <span>{product.name}</span>
         </div>
 
         <section className="product-hero">
@@ -67,7 +67,7 @@ export function ProductDetail({ product, relatedProducts }: ProductDetailProps) 
               <span className="group-label">Color options</span>
               <div className="option-grid">
                 {products.slice(0, 9).map((item) => (
-                  <Link className={`option ${item.id === product.id ? "active" : ""}`} href={`/products/${item.id}`} key={item.id}>
+                  <Link className={`option ${item.id === product.id ? "active" : ""}`} href={`/products/${item.id}/`} key={item.id}>
                     {item.color}
                   </Link>
                 ))}
@@ -85,7 +85,7 @@ export function ProductDetail({ product, relatedProducts }: ProductDetailProps) 
               <Link className="button peach" href="mailto:hello@example.com">
                 Request quote
               </Link>
-              <Link className="button alt" href="/products">
+              <Link className="button alt" href="/products/">
                 Back to catalog
               </Link>
             </div>
@@ -152,7 +152,7 @@ export function ProductDetail({ product, relatedProducts }: ProductDetailProps) 
             <h2>Related products</h2>
             <div className="related-grid">
               {relatedProducts.map((item) => (
-                <Link className="related-card" href={`/products/${item.id}`} key={item.id}>
+                <Link className="related-card" href={`/products/${item.id}/`} key={item.id}>
                   <img src={item.image} alt={item.name} />
                   <span className="related-info">
                     <span>{item.name}</span>

@@ -7,7 +7,7 @@ type ProductCardProps = {
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
-    <Link className="product-card" href={`/products/${product.id}`}>
+    <Link className="product-card" href={`/products/${product.id}/`}>
       <img src={product.image} alt={product.name} />
       <div className="product-info">
         <span>{product.name}</span>

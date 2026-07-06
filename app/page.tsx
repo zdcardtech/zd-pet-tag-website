@@ -24,7 +24,7 @@ export default function HomePage() {
               <Link className="button peach" href="/#buy">
                 Choose a tag
               </Link>
-              <Link className="button alt" href="/#how">
+              <Link className="button alt" href="/how-it-works/">
                 See how it works
               </Link>
             </div>
@@ -66,22 +66,22 @@ export default function HomePage() {
           </SectionHeader>
           <div className="feature-grid">
             <article className="feature">
-              <div className="icon-badge">N</div>
+              <div className="icon-badge nfc-badge">NFC</div>
               <h3>NFC tap access</h3>
               <p>NFC-enabled phones can open the pet profile with a simple tap. No extra app required.</p>
             </article>
             <article className="feature">
-              <div className="icon-badge">QR</div>
+              <div className="icon-badge qr-badge">QR</div>
               <h3>QR backup</h3>
               <p>If NFC is unavailable, the printed QR code opens the same rescue profile.</p>
             </article>
             <article className="feature">
-              <div className="icon-badge">ID</div>
+              <div className="icon-badge id-badge">ID</div>
               <h3>Pet profile page</h3>
               <p>Show the pet name, photo, owner contacts, allergy notes, and personality tips.</p>
             </article>
             <article className="feature">
-              <div className="icon-badge">QC</div>
+              <div className="icon-badge qc-badge">QC</div>
               <h3>Built for daily use</h3>
               <p>Designed for collars, walks, travel, and the everyday adventures pets love.</p>
             </article>
@@ -124,7 +124,7 @@ export default function HomePage() {
               ))}
             </div>
             <div className="more-row">
-              <Link className="button alt" href="/products">
+              <Link className="button alt" href="/products/">
                 More products
               </Link>
             </div>

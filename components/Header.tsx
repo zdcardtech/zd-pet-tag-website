@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 type HeaderProps = {
-  active?: "products";
+  active?: "products" | "how";
 };
 
 export function Header({ active }: HeaderProps) {
@@ -13,11 +13,12 @@ export function Header({ active }: HeaderProps) {
           <span>ZD Pet Tag</span>
         </Link>
         <div className="nav-links">
-          <Link className={active === "products" ? "active" : undefined} href="/products">
+          <Link className={active === "products" ? "active" : undefined} href="/products/">
             Products
           </Link>
-          <Link href="/#how">How it works</Link>
-          <Link href="/#styles">Collections</Link>
+          <Link className={active === "how" ? "active" : undefined} href="/how-it-works/">
+            How it works
+          </Link>
           <Link href="/#blog">Blog</Link>
           <Link href="/#about">About us</Link>
           <Link href="/#faq">FAQ</Link>
