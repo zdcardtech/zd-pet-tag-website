@@ -13,8 +13,9 @@ export default function HomePage() {
     <>
       <Header />
       <main id="top">
-        <section className="hero" id="product">
-          <div>
+        <section className="hero home-banner" id="product">
+          <img className="home-banner-image" src="/home-hero-banner.png" alt="Happy dog with ZD smart pet tag and pet profile app" />
+          <div className="home-banner-copy">
             <span className="eyebrow">NFC + QR smart pet ID tags</span>
             <h1>A tiny tag that helps pets find their way home</h1>
             <p className="lead">
@@ -42,21 +43,6 @@ export default function HomePage() {
                 <strong>Updatable</strong>
                 <span>Change contact and pet details without replacing the tag.</span>
               </div>
-            </div>
-          </div>
-
-          <div className="hero-visual" aria-label="ZD pet tag display">
-            <div className="product-stage">
-              <img src="/hero-product-cutout.png" alt="Purple ZD NFC pet tag cutout" />
-            </div>
-            <div className="tag-note scan">Tap NFC</div>
-            <div className="tag-note safe">Scan to contact owner</div>
-            <div className="paw-sticker" aria-hidden="true">
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
             </div>
           </div>
         </section>
@@ -169,7 +155,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="app-photo">
-              <img src="/pet-tag-application.png" alt="Lost pet rescue process diagram" />
+              <img src="/lost-pet-rescue-illustration.png" alt="Illustrated lost pet rescue flow with NFC pet tag and owner alert" />
             </div>
           </div>
         </section>
@@ -181,17 +167,22 @@ export default function HomePage() {
             </div>
             <div className="about-copy">
               <span className="eyebrow">About us</span>
-              <h2>Made by a team focused on customization and quality</h2>
+              <h2>A China factory for custom NFC pet tags</h2>
               <p>
-                ZD supports flexible pet tag production, from NFC and QR integration to color, material, logo, and packaging
-                customization. Our workflow is built around sample checks, consistent printing, clean assembly, and reliable chip testing
-                before shipment.
+                ZD is a China-based RFID and NFC product factory supporting smart pet tag programs for brands, wholesalers, pet shops,
+                and promotional buyers. With production, printing, assembly, NFC/QR setup, and inspection handled close to source, we can
+                offer practical factory-direct pricing while keeping customization flexible.
+              </p>
+              <p>
+                Our advantage is simple: stable manufacturing capacity, responsive sampling, competitive bulk costs, and quality control
+                before shipment. We help buyers turn artwork, colors, packaging ideas, and rescue-profile requirements into a ready pet tag
+                collection.
               </p>
               <div className="about-list">
-                <span>Custom logo and artwork</span>
-                <span>NFC and QR configuration</span>
-                <span>Material and color options</span>
-                <span>Quality inspection before shipping</span>
+                <span>China factory supply</span>
+                <span>Factory-direct price advantage</span>
+                <span>OEM/ODM logo and artwork</span>
+                <span>NFC, QR, and QC before shipping</span>
               </div>
             </div>
           </div>

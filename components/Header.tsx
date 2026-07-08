@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 type HeaderProps = {
-  active?: "products" | "how" | "blog";
+  active?: "products" | "how" | "blog" | "about";
 };
 
 export function Header({ active }: HeaderProps) {
@@ -22,7 +22,9 @@ export function Header({ active }: HeaderProps) {
           <Link className={active === "blog" ? "active" : undefined} href="/blog/">
             Blog
           </Link>
-          <Link href="/#about">About us</Link>
+          <Link className={active === "about" ? "active" : undefined} href="/about/">
+            About us
+          </Link>
           <Link href="/#faq">FAQ</Link>
         </div>
         <Link className="button peach" href="mailto:sales43@zdcardtech.com">

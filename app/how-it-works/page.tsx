@@ -165,10 +165,11 @@ export default function HowItWorksPage() {
           <div className="production-panel">
             <div>
               <span className="eyebrow">For custom production</span>
-              <h2>Designed for brands, shops, and pet accessory programs</h2>
+              <h2>Factory-direct support for pet accessory programs</h2>
               <p>
-                ZD can support custom colors, artwork, logo placement, packaging, NFC/QR setup, and quality checks before shipment. MOQ
-                starts from 100PCS for current silicone tag styles.
+                As a China-based NFC and RFID product factory, ZD can support custom colors, artwork, logo placement, packaging, NFC/QR
+                setup, and quality checks before shipment. MOQ starts from 100PCS for current silicone tag styles, with competitive
+                factory-direct pricing for bulk orders.
               </p>
             </div>
             <div className="production-metrics">
