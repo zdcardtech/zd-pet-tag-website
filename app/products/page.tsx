@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DynamicTagShowcase } from "@/components/DynamicTagShowcase";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ProductCard } from "@/components/ProductCard";
@@ -23,9 +24,7 @@ export default function ProductsPage() {
               <Link href="#metal-edge">Metal Edge</Link>
             </div>
           </div>
-          <div className="hero-card" aria-label="Featured ZD pet tag">
-            <img src="/hero-product-cutout.png" alt="Purple NFC pet tag product cutout" />
-          </div>
+          <DynamicTagShowcase />
         </section>
 
         <section className="section">
@@ -105,7 +104,7 @@ export default function ProductsPage() {
               <h2>Need a custom product line?</h2>
               <p>Send artwork, material preference, quantity, and packaging needs. ZD can help prepare a matching pet tag collection.</p>
             </div>
-            <Link className="button peach" href="mailto:hello@example.com">
+            <Link className="button peach" href="mailto:sales43@zdcardtech.com">
               Contact us
             </Link>
           </div>

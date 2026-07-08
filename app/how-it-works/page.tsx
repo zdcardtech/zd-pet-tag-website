@@ -64,7 +64,7 @@ export default function HowItWorksPage() {
               <Link className="button peach" href="/products/">
                 Browse products
               </Link>
-              <Link className="button alt" href="mailto:hello@example.com">
+              <Link className="button alt" href="mailto:sales43@zdcardtech.com">
                 Request quote
               </Link>
             </div>

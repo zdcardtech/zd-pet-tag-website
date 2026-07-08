@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ProductCard } from "@/components/ProductCard";
 import { SectionHeader } from "@/components/SectionHeader";
+import { blogPosts } from "@/lib/blog-posts";
 import { products } from "@/lib/products";
 
 export default function HomePage() {
@@ -198,29 +199,22 @@ export default function HomePage() {
 
         <section className="blog" id="blog">
           <div className="section">
-            <SectionHeader title="Blog">Use this section later for pet safety guides, product education, and customer stories.</SectionHeader>
+            <SectionHeader title="Blog">Pet safety guides, NFC product education, and custom smart tag advice.</SectionHeader>
             <div className="blog-grid">
-              <article className="blog-card">
-                <small>Pet safety</small>
-                <div>
-                  <h3>What should owners prepare before a pet gets lost?</h3>
-                  <p>A simple checklist covering collars, ID information, and daily walking habits.</p>
-                </div>
-              </article>
-              <article className="blog-card">
-                <small>Product guide</small>
-                <div>
-                  <h3>NFC pet tags vs. engraved tags</h3>
-                  <p>Smart profiles can carry richer information and stay updated over time.</p>
-                </div>
-              </article>
-              <article className="blog-card">
-                <small>Customization</small>
-                <div>
-                  <h3>How to design a pet tag collection for your brand</h3>
-                  <p>Think through material, color, icon style, packaging, and customer use cases.</p>
-                </div>
-              </article>
+              {blogPosts.map((post) => (
+                <Link className="blog-card" href={`/blog/${post.slug}/`} key={post.slug}>
+                  <small>{post.category}</small>
+                  <div>
+                    <h3>{post.title}</h3>
+                    <p>{post.excerpt}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="more-row">
+              <Link className="button alt" href="/blog/">
+                Read all articles
+              </Link>
             </div>
           </div>
         </section>
@@ -254,7 +248,7 @@ export default function HomePage() {
               <p>Prices, MOQ, packaging, and purchase links can be replaced with your real sales details in the next round.</p>
               <span className="price-text">Quote on request</span>
             </div>
-            <Link className="button peach" href="mailto:hello@example.com">
+            <Link className="button peach" href="mailto:sales43@zdcardtech.com">
               Contact us
             </Link>
           </div>

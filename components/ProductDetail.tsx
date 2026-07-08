@@ -82,7 +82,7 @@ export function ProductDetail({ product, relatedProducts }: ProductDetailProps) 
             </ul>
 
             <div className="action-row">
-              <Link className="button peach" href="mailto:hello@example.com">
+              <Link className="button peach" href="mailto:sales43@zdcardtech.com">
                 Request quote
               </Link>
               <Link className="button alt" href="/products/">
